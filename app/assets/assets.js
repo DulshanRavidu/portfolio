@@ -35,6 +35,12 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import automobile_project from './automobile_project.png';
+import cookbook from './cookbook.jpg';
+import unishare_project from './unishre_project.jpg';
+import m1 from './m1.png';
+import weather_app from './weather_app.jpg';
+import hd from './hd.png';
 
 export const assets = {
     user_image,
@@ -73,29 +79,63 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    automobile_project,
+    cookbook,
+    unishare_project,
+    m1,
+    weather_app,
+    hd
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Automobile Service Time Logging & Appointment System',
+        description: 'Enterprise Application Development Project',
+        bgImage: assets.automobile_project,
+        githubLink: 'https://github.com/ravndu-dlshan/asms-frontend',
+        fullDescription: 'The Automobile Service Management System enables customers to book appointments, view real-time service progress, and request modifications, while employees can log time, update progress, and monitor workloads. I developed the backend using Spring Boot with role-based authentication and RESTful APIs, and contributed to building the frontend with React.js and real-time updates using WebSockets.',
+        level: 'Level 3 – Enterprise Application Development Project'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
+        title: 'CookBook – Interactive Cookbook & Streaming Platform',
+        description: 'Level 2 - Software Project',
+        bgImage: assets.cookbook,
+        githubLink: 'https://github.com/Kaveen-Ambegoda/cookbook-app',
+        fullDescription: 'Built a wellness forum with responsive UI using Next.js (TypeScript) & Tailwind CSS, RESTful APIs with ASP.NET Core, and MS SQL via Entity Framework Core. Features include user posts, comments, and a custom diet planning calculator, developed in an Agile team. Tech Stack: Next.js (TypeScript), Tailwind CSS, ASP.NET Core Web API, Entity Framework Core, MS SQL',
+        level: 'Level 2 - Software Project'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
+        title: 'UniShare – University File Sharing & Communication System',
+        description: 'Level 3 — Academic Project (Network Programming)',
+        bgImage: assets.unishare_project,
+        githubLink: 'https://github.com/hasathps/Unishare-Fileshare_-_Communication_System',
+        fullDescription: 'A web-based platform that enables university students to share study materials, upload files, and collaborate through module-based real-time chat. Includes organized file libraries, drag-and-drop uploads, and analytics for monitoring user activity. Tech Stack: Core Java, ReactVite, Javascript, postgresql',
+        level: 'Level 3 — Academic Project (Network Programming)'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'UniversityEvents-MobileApp',
+        description: 'Level 3 - Academic Project (Mobile Application Development)',
+        bgImage: assets.m1,
+        githubLink: 'https://github.com/DulshanRavidu/university-events-mobileapp',
+        fullDescription: 'A modern cross-platform mobile application built to help university students discover, register for, and manage campus events. The app includes authentication, dynamic event listings, category filtering, favorites management, and an AI-powered chatbot assistant. It ensures a smooth user experience using clean UI design, optimized navigation, and persistent state management. Tech Stack: React Native (Expo), Typescript',
+        level: 'Level 3 - Academic Project (Mobile Application Development)'
+    },
+    {
+        title: 'Weather App - Flutter Mobile Application',
+        description: 'Mobile Weather Application',
+        bgImage: assets.weather_app,
+        githubLink: 'https://github.com/DulshanRavidu/personalized_weather_app',
+        fullDescription: 'A Flutter mobile weather application with student index input that derives coordinates, automatic coordinate calculation converting student index to latitude/longitude, and real-time weather data from Open-Meteo API. Features include beautiful modern UI with gradient backgrounds adapting to weather conditions, weather-specific icons and colors, card-based design with smooth animations, offline support with cached data, error handling with friendly messages, request URL display for verification, and loading states with visual feedback. Tech Stack: Flutter, Dart, Open-Meteo API',
+        level: 'Mobile Application Development'
+    },
+    {
+        title: 'GoGoSnake – Interactive Snake Game',
+        description: 'Level 3 - Hardware Project (Academic Project)',
+        bgImage: assets.hd,
+        linkedinLink: 'https://www.linkedin.com/feed/update/urn:li:activity:7223719723329331200/',
+        fullDescription: 'GoGoSnake is a modern snake game built on Raspberry Pi, featuring 3D NeoPixel LED visuals, dual remote controllers, and load cell detection for an interactive gaming experience. Developed using MicroPython on Raspberry Pi Zero 2W, with Next.js for the frontend and FastAPI for backend services. Tech Stack: MicroPython (Raspberry Pi Zero 2W), Next.js, FastAPI',
+        level: 'Level 3 - Hardware Project (Academic Project)'
     },
 ]
 

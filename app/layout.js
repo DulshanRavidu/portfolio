@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth ">
+    <html lang="en" className="scroll-smooth dark" suppressHydrationWarning>
 
       <Head>
         <title>Dulshan - Portfolio</title>
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
 
       <body
         className={`${outfit.className} ${ovo.className} antialiased leading-4 overflow-x-hidden dark:bg-darkTheme dark:text-white`}
+        suppressHydrationWarning
       >
         {children}
       </body>

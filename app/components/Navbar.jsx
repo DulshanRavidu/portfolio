@@ -46,7 +46,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <li><a className='Ovo' href="#top">Home</a></li>
             <li><a className='Ovo' href="#about">About me</a></li>
             <li><a className='Ovo' href="#services">Services</a></li>
-            <li><a className='Ovo' href="#work">My Work</a></li>
+            <li><a className='Ovo' href="#work">My Projects</a></li>
             <li><a className='Ovo' href="#contact">Contact me</a></li>
         </ul>
 
@@ -76,7 +76,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <li><a className='Ovo' onClick={closeMenu} href="#top">Home</a></li>
             <li><a className='Ovo' onClick={closeMenu} href="#about">About me</a></li>
             <li><a className='Ovo' onClick={closeMenu} href="#services">Services</a></li>
-            <li><a className='Ovo' onClick={closeMenu} href="#work">My Work</a></li>
+            <li><a className='Ovo' onClick={closeMenu} href="#work">My Projects</a></li>
             <li><a className='Ovo' onClick={closeMenu} href="#contact">Contact me</a></li>
              
         </ul> 

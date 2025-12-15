@@ -28,7 +28,7 @@ const Services = () => {
          initial={{opacity: 0}}
          whileInView={{opacity: 1}}
          transition={{delay: 0.7, duration: 1}}
-         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo' >I am a frontend developer from the University of Moratuwa with over two years of experience working on multiple projects.</motion.p>
+         className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo' >I am a Full Stack developer from the University of Moratuwa with over three years of experience working on multiple projects.</motion.p>
 
            <motion.div
            initial={{opacity: 0}}

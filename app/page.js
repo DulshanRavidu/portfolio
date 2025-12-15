@@ -10,19 +10,27 @@ import Work from "./components/Work";
 
 export default function Home() {
 
-   const [isDarkMode, setIsDarkMode] = useState(false);
+   const [isDarkMode, setIsDarkMode] = useState(true);
+   const [mounted, setMounted] = useState(false);
 
     useEffect(()=>{
-      if(localStorage === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches ) ){
-         setIsDarkMode(true)  
-
+      setMounted(true);
+      const shouldBeDark = localStorage.theme === 'dark' || (!('theme' in localStorage));
+      setIsDarkMode(shouldBeDark);
+      
+      if(shouldBeDark){
+        document.documentElement.classList.add('dark');
+        localStorage.theme = 'dark';
       }else{
-         setIsDarkMode(false)
+        document.documentElement.classList.remove('dark');
+        localStorage.theme = '';
       }
     },[]);
 
 
    useEffect(()=>{
+     if(!mounted) return;
+     
      if(isDarkMode){
         document.documentElement.classList.add('dark');
         localStorage.theme = 'dark';
@@ -30,7 +38,7 @@ export default function Home() {
         document.documentElement.classList.remove('dark');
         localStorage.theme = '';
      }
-   },[isDarkMode])
+   },[isDarkMode, mounted])
 
 
   return (
